@@ -9,14 +9,8 @@ Parameters
 
 Licensor:             Capsule X Labs
 
-Licensed Work:        [Your Project Name]
-                      The Licensed Work is (c) [Year] Capsule X Labs
-
-Additional Use Grant: Any uses listed and defined at
-                      [your-project-license-grants.yourdomain.eth]
-
-Change Date:          The earlier of [Change Date] or a date specified at
-                      [your-project-license-date.yourdomain.eth]
+Licensed Work:        Hopon
+                      The Licensed Work is (c) 2024 Capsule X Labs
 
 Change License:       GNU General Public License v2.0 or later
 
