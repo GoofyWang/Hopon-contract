@@ -35,7 +35,7 @@ contract UniswapV2{
         uint[] memory amountOutMins = uniswapRouter.getAmountsOut(amountIn, path);
         uint amountOutMin = amountOutMins[1] - ((amountOutMins[1] * slippage) / 10000);
 
-        // Make the swap with a 3% slippage tolerance
+        // Make the swap with slippage tolerance
         uint[] memory amounts = uniswapRouter.swapExactTokensForTokens(
             amountIn,
             amountOutMin, // The calculated minimum amount of tokenOut to receive
