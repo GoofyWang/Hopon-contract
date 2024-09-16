@@ -170,7 +170,7 @@ contract HoponV1 is ERC20, ReentrancyGuard {
     // Manager deposit
     function manageDeposit(uint256 _amount) external nonReentrant {
         uint256 preBalance = IERC20(baseTokenAddress).balanceOf(address(this));
-        require(IERC20(baseTokenAddress).transferFrom{gas: 300000}(msg.sender, address(this), _amount), "Deposit failed");
+        require(IERC20(baseTokenAddress).transferFrom(msg.sender, address(this), _amount), "Deposit failed");
         uint256 postBalance = IERC20(baseTokenAddress).balanceOf(address(this));
         require(postBalance - preBalance == _amount, "Incorrect amount received");
         managerPool += _amount;
